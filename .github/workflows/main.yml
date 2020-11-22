@@ -1,12 +1,12 @@
 name: Build and Publish Docker
 on:
-  workflow_dispatch:
   push:
     branches:
       - master
 jobs:
   canary:
     runs-on: ubuntu-latest
+    name: build docker
     steps:
       - uses: actions/checkout@master
       - name: Publish to Docker Repository
