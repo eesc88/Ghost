@@ -1,8 +1,8 @@
-# /usr/src/nodejs/hello-docker/Dockerfile
+# 配置运行基础环境
 FROM node:14.15.0
-# 在容器中创建一个目录
-RUN npm install yarm -g
+# 添加Ghost依赖环境
 RUN yarn global add knex-migrator grunt-cli ember-cli
+# 在容器中创建一个目录
 RUN mkdir -p /usr/src/nodejs/
 # 定位到容器的工作目录
 WORKDIR /usr/src/nodejs/

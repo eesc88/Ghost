@@ -20,8 +20,8 @@ jobs:
       - name: Set up Git
         run: |
           git config --global pull.rebase true
-          git config --global user.name "Ghost CI"
-          git config --global user.email "ghost@example.com"
+          git config --global user.name "eesc88"
+          git config --global user.email "cceecc@sina.cn"
 
       - run: yarn
       - run: grunt master --upstream=origin
