@@ -14,4 +14,4 @@ COPY . /usr/src/nodejs/
 RUN yarn setup
  
 EXPOSE 2368
-CMD npm start
+CMD export NODE_ENV=production && npm start

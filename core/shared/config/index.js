@@ -4,6 +4,7 @@ const _debug = require('ghost-ignition').debug._base;
 const debug = _debug('ghost:config');
 const localUtils = require('./utils');
 const env = process.env.NODE_ENV || 'development';
+
 const _private = {};
 
 _private.loadNconf = function loadNconf(options) {
